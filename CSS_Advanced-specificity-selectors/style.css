@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(2, [col] 340px);
+  margin: 2%;
+  font-family: Lato;
+}
+.container .card-1,
+.card-2 {
+  border-radius: 5px;
+  box-shadow: 0.1px 0.3px 3px rgba(0, 0, 0, 0.2);
+}
+.name-status-photo {
+  display: grid;
+  grid-gap: 6px;
+  grid-template-columns: repeat(2, 2fr);
+  padding: 4%;
+}
+.name-status-photo > img {
+  width: 50px;
+}
+.name-status-photo .name-status p:first-child {
+  font-size: 21px;
+  font-weight: bold;
+}
+p:last-child {
+  grid-column: 1/-1;
+}
+.status {
+  color: rgb(133, 133, 133);
+}
+.buttons-sector {
+  border-top: 1px rgba(214, 214, 214, 0.637) solid;
+  padding: 3%;
+}
+.btn-group {
+  width: 100%;
+}
+.btn-group button {
+  width: 50%;
+  border: 2px solid rgb(211, 56, 8);
+  padding: 10px 24px;
+  cursor: pointer;
+  float: left;
+  background: none;
+  font-size: 15.5px;
+  font-weight: 600;
+}
+.name-status-photo > p {
+  color: rgb(87, 87, 87);
+  line-height: 1.4em;
+  display: inline;
+  font-size: 15px;
+}
+.name-status-photo .status {
+  padding: 5% 0;
+  font-size: 15px;
+}
+.btn-group button:not(:last-child) {
+  border-right: none;
+  border-color: #28db2e;
+}
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.btn-group .approve {
+  color: #28db2e;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.btn-group .decline {
+  color: #f33a1a;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.btn-group .approve:hover {
+  background-color: #0eaa00;
+  color: #fff;
+}
+.btn-group .decline:hover {
+  background-color: #ff2600;
+  color: #fff;
+}
+.photo1,
+.photo2 {
+  width: 30%;
+  justify-self: end;
+}
+.card-1,
+.card-2 {
+  border: 2px rgba(214, 214, 214, 0.637) solid;
+}
